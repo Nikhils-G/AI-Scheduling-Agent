@@ -1,0 +1,79 @@
+patient_id,name,dob,gender,email,phone,address,city,state,zip,primary_insurer,member_id,group_no,preferred_doctor,is_returning,last_visit_date
+P001,Vidur Bera,1986-10-19,Other,chiragbail@kaul-char.biz,+912847035404,"H.No. 601, Rana Ganj",Junagadh,Kerala,640790,HDFC Health,INS13278,G859,Dr_Iyer,True,2024-03-10
+P002,Ivan Borah,1960-05-05,Male,stiwari@dasgupta.info,+919628742290,"H.No. 60
+Chada Chowk",Unnao,Uttarakhand,021227,HDFC Health,INS98696,G858,Dr_Patel,True,2014-03-17
+P003,Madhav Aggarwal,1963-07-03,Female,bhaktayuvraj@hotmail.com,+910012779436,"50
+Halder Marg",Darbhanga,Gujarat,573719,HDFC Health,INS13905,G195,Dr_Sharma,True,2013-07-19
+P004,Ehsaan Keer,1962-11-01,Other,mehulseth@loke.info,6352946179,"64/590
+Shah Street",Jamshedpur,West Bengal,766695,HDFC Health,INS83563,G303,Dr_Patel,False,
+P005,Raunak Ratta,1961-08-27,Male,emirbuch@wali.com,+918692625982,"35, Barad Marg",Medininagar,Meghalaya,113873,Max Bupa,INS87236,G384,Dr_Sharma,True,2007-12-28
+P006,Ojas Hora,2002-10-05,Female,ramanhridaan@bobal.info,0949189167,"H.No. 012, Koshy Marg",Suryapet,Sikkim,117794,Star Health,INS30379,G320,Dr_Iyer,True,2034-04-19
+P007,Farhan Mani,2000-05-13,Female,goletara@venkataraman-vyas.com,9370601458,"H.No. 72, Rajagopalan Nagar",Bhagalpur,Chhattisgarh,378324,HDFC Health,INS57052,G967,Dr_Iyer,False,
+P008,Armaan Varughese,1984-06-23,Male,vanya88@hotmail.com,+919240458133,"22/892
+Barman Street",Dehradun,Himachal Pradesh,011842,Max Bupa,INS80284,G227,Dr_Iyer,True,2036-08-13
+P009,Mehul Vig,1970-06-22,Female,kjain@butala.org,+913189741420,"H.No. 16, Soman Marg",Sikar,Gujarat,951224,Aditya Birla,INS57400,G691,Dr_Sharma,True,1999-11-27
+P010,Vanya Barad,2006-11-19,Other,ktrivedi@yahoo.com,03816748257,"72/635
+Rama Marg",Begusarai,Gujarat,926644,ICICI Lombard,INS47930,G181,Dr_Sharma,True,2051-04-24
+P011,Vaibhav Soman,1988-04-25,Female,nayantara33@kothari.biz,2046097484,"H.No. 92
+Jhaveri Circle",Siwan,Gujarat,977852,Max Bupa,INS93320,G954,Dr_Iyer,True,2032-04-19
+P012,Ishaan Sinha,1967-12-28,Female,shethcharvi@gmail.com,09329621076,"12/38
+Arya Marg",Nangloi Jat,Madhya Pradesh,683344,ICICI Lombard,INS97841,G373,Dr_Patel,True,2022-09-10
+P013,Mehul Gaba,2002-10-17,Other,hbal@walia-gola.com,05874605853,"845, Sachar Ganj",Sri Ganganagar,Telangana,057936,ICICI Lombard,INS80010,G846,Dr_Sharma,True,2050-11-27
+P014,Umang Bal,1956-08-16,Female,wmani@hotmail.com,02673866403,"H.No. 238, Lalla Road",Ujjain,Uttar Pradesh,423090,Star Health,INS93886,G804,Dr_Patel,True,1998-07-20
+P015,Oorja Sharaf,1970-10-20,Male,chaudhryvivaan@hotmail.com,+912253231281,"H.No. 77
+Boase",Nellore,Tamil Nadu,748091,ICICI Lombard,INS14207,G924,Dr_Iyer,False,
+P016,Adira Varma,1976-07-04,Female,rati64@dhaliwal.com,3881710425,"58/71
+Mall Zila",Anand,Chhattisgarh,109196,HDFC Health,INS37653,G680,Dr_Patel,False,
+P017,Lavanya Dara,2000-06-14,Male,sarkarcharvi@dey-tripathi.info,00230348958,"03
+Sachdeva Zila",Bulandshahr,Uttar Pradesh,104647,Max Bupa,INS61856,G758,Dr_Iyer,True,2039-09-17
+P018,Kashvi Swamy,1984-10-22,Male,ydugar@wali-ben.com,2008979343,"99
+Chander Path",Unnao,West Bengal,920158,ICICI Lombard,INS83579,G651,Dr_Iyer,False,
+P019,Dhanuk Chaudry,1950-06-03,Other,shagatik@mand-lall.com,03874486382,"H.No. 39, Sarma Nagar",Hazaribagh,Chhattisgarh,436811,Max Bupa,INS57447,G324,Dr_Sharma,False,
+P020,Heer Dugal,2001-02-23,Male,mohanlalhanda@sanghvi-sunder.com,05988833201,"72/587, Keer Nagar",Uluberia,Uttarakhand,300729,HDFC Health,INS24371,G256,Dr_Patel,True,2047-06-18
+P021,Neelofar Chana,1972-06-09,Other,ira50@gmail.com,09520854421,"H.No. 732, Dey Road",Delhi,Kerala,579407,HDFC Health,INS60432,G490,Dr_Patel,False,
+P022,Madhav Sankaran,1990-02-19,Other,fjain@hotmail.com,9055244892,"21/198
+Subramaniam Ganj",Erode,Kerala,763265,Star Health,INS82512,G981,Dr_Sharma,True,2041-08-07
+P023,Divyansh Batra,1987-09-30,Female,solankikabir@ravi.biz,+916300725739,"H.No. 892
+Garde Street",Bhimavaram,Uttar Pradesh,700955,Star Health,INS24621,G400,Dr_Iyer,True,2035-06-23
+P024,Advika Korpal,1998-06-27,Male,jayantdayal@bava.org,+917341379901,"H.No. 77, Seth Zila",Muzaffarnagar,Manipur,570723,Star Health,INS75612,G880,Dr_Sharma,True,2039-04-02
+P025,Eshani Comar,1995-10-12,Other,shray06@date.biz,+913365559213,"90/74, Hayer Chowk",Kharagpur,Himachal Pradesh,889675,Aditya Birla,INS89818,G303,Dr_Sharma,False,
+P026,Lakshit Shankar,1982-02-04,Male,wkrishnamurthy@vyas.net,02916765796,"H.No. 612
+Varma Chowk",Bhimavaram,Uttarakhand,548412,Aditya Birla,INS79514,G100,Dr_Patel,False,
+P027,Divyansh Kota,1987-06-25,Female,mehulvohra@bhatia.net,+912488165850,"18
+Agarwal Marg",Tirupati,Goa,452136,HDFC Health,INS24662,G471,Dr_Iyer,True,2017-06-16
+P028,Jivika Bail,1966-10-27,Male,saanvi87@deep-chana.com,+916373077660,"H.No. 323, Arora Chowk",Ulhasnagar,Arunachal Pradesh,837183,Aditya Birla,INS20322,G187,Dr_Patel,False,
+P029,Drishya Krishnan,1955-11-12,Male,adirabains@gmail.com,9608338564,"026
+Tella Road",Ratlam,Sikkim,370493,Aditya Birla,INS26483,G231,Dr_Patel,False,
+P030,Sana Comar,1952-03-05,Other,trishasekhon@hotmail.com,7223882520,"38, Lal Nagar",Tezpur,Kerala,907658,ICICI Lombard,INS44741,G640,Dr_Patel,False,
+P031,Hazel Wable,1983-08-14,Male,varkeyoorja@gmail.com,+919230522727,"683
+Guha Marg",Shimoga,Arunachal Pradesh,378361,Aditya Birla,INS36365,G830,Dr_Iyer,False,
+P032,Eva Balan,1996-02-09,Other,gsani@gmail.com,07181932803,"H.No. 700
+Devan Path",Ambala,Sikkim,654651,Star Health,INS67422,G629,Dr_Iyer,True,2034-08-09
+P033,Kanav Sagar,1960-08-14,Male,madhav46@varughese.info,+910394280164,"580
+Divan Path",Nadiad,Mizoram,081026,HDFC Health,INS54313,G121,Dr_Patel,True,2014-05-24
+P034,Priyansh Gera,1972-06-07,Male,aggarwalmamooty@gmail.com,+912643181186,"433, Walia",Sambalpur,Madhya Pradesh,121486,HDFC Health,INS19305,G824,Dr_Patel,True,2010-01-29
+P035,Zeeshan Kalla,1987-11-11,Male,miraya17@sachar.com,+919383548532,"684
+Rao Nagar",Jamnagar,Assam,020671,HDFC Health,INS53309,G172,Dr_Patel,True,2027-09-24
+P036,Riya Virk,1959-08-07,Other,balakrishnanarnav@savant-chakraborty.net,+917671105066,"H.No. 65
+Wagle Ganj",Giridih,Gujarat,178562,Max Bupa,INS38080,G652,Dr_Sharma,False,
+P037,Anya Ramakrishnan,1951-12-13,Male,ela78@gmail.com,+912159035317,"89
+Bail Street",Jaipur,Jharkhand,892668,Max Bupa,INS63354,G294,Dr_Sharma,True,1998-08-30
+P038,Abram Wali,1992-09-21,Female,sshankar@krish-ganguly.com,+913861439342,"94/920, Vig Marg",Moradabad,Kerala,800379,Max Bupa,INS63883,G578,Dr_Patel,True,2024-07-07
+P039,Anvi Randhawa,1990-08-19,Male,seher37@hotmail.com,+919434461630,"65/813
+Deshpande Nagar",Arrah,Maharashtra,337400,Max Bupa,INS54473,G919,Dr_Sharma,True,2026-08-09
+P040,Jayesh Korpal,2007-02-09,Male,qganesan@vohra.com,+912787952557,"40/328
+Zacharia Circle",Karnal,Madhya Pradesh,094475,Aditya Birla,INS68800,G243,Dr_Iyer,True,2046-12-24
+P041,Samar Desai,1983-10-26,Female,tarinichoudhury@yahoo.com,+917046198717,"H.No. 694, Rout Chowk",Madanapalle,Madhya Pradesh,691191,ICICI Lombard,INS19880,G553,Dr_Patel,True,2013-06-18
+P042,Nirvi Rao,1980-06-08,Other,mishtigara@gmail.com,+919109072669,"H.No. 82
+Sur Marg",Gangtok,Mizoram,981871,Aditya Birla,INS11934,G195,Dr_Sharma,True,2026-01-16
+P043,Baiju Acharya,1969-08-11,Female,gray@tella.com,06364929782,"775
+Majumdar Chowk",Durg,Madhya Pradesh,326395,Max Bupa,INS38016,G985,Dr_Iyer,True,2004-05-16
+P044,Aaina Butala,1979-05-14,Female,kartikkhosla@yahoo.com,09319766852,"33/78
+Chhabra Nagar",Yamunanagar,Arunachal Pradesh,718434,HDFC Health,INS61173,G371,Dr_Iyer,False,
+P045,Jivin Tata,1965-06-15,Female,lankapurab@hotmail.com,6972919711,"69/856, Sekhon Chowk",Bhusawal,Nagaland,292733,Aditya Birla,INS96752,G835,Dr_Iyer,True,2001-05-08
+P046,Riya Hayre,1950-10-24,Female,issacdivyansh@kaul.com,5155455952,"740, Johal Marg",Nagaon,Tripura,841712,ICICI Lombard,INS17665,G693,Dr_Patel,True,1992-04-04
+P047,Dishani Kohli,1981-01-02,Male,anahi71@yahoo.com,+915214653414,"969, Subramaniam Street",Adoni,Manipur,728965,HDFC Health,INS86569,G588,Dr_Patel,True,2010-12-07
+P048,Dhruv Gopal,1967-05-15,Other,atwaleva@gmail.com,+919977876445,"137, Chaudhry",Hazaribagh,Assam,723071,HDFC Health,INS34356,G170,Dr_Patel,True,2005-04-18
+P049,Yashvi Samra,1996-11-02,Female,dmajumdar@deol-chanda.biz,+918170843844,"32, Dubey Ganj",Dehri,Andhra Pradesh,807196,HDFC Health,INS84668,G352,Dr_Patel,True,2027-11-23
+P050,Aarna Apte,1994-11-17,Female,ykota@hotmail.com,4299262256,"46
+Tak Zila",Ghaziabad,Assam,375074,Aditya Birla,INS84085,G635,Dr_Iyer,False,
