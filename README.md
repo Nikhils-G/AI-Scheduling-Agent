@@ -1,5 +1,8 @@
 # AI Scheduling Agent 
 
+## [Live-Link](https://ai-scheduling-agent.streamlit.app/)
+
+
 This project is a **medical appointment scheduling system** built to automate booking, reduce patient no-shows, and streamline clinic operations. It is designed as a lightweight, rule-based agent that simulates the real challenges clinics face — managing patients, calendars, reminders, and insurance information.
 
 The system integrates with mock data (patients in CSV, doctor schedules in Excel, and intake forms in PDF) and demonstrates a full workflow:
