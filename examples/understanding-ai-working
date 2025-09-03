@@ -1,110 +1,83 @@
-🔍 Fuzzy Matching Explained
+## 🔍 Fuzzy Matching Explained
 
-A key part of this agent is detecting patients even if there’s a typo in their name. This is done using:
+A key part of this agent is detecting patients even if there’s a **typo in their name**. This is done using:
 
+```python
 from difflib import SequenceMatcher
 score = SequenceMatcher(None, input_name.lower(), db_name.lower()).ratio()
+```
 
-1. How SequenceMatcher().ratio() Works
+### 1. How `SequenceMatcher().ratio()` Works
 
-It’s mathematics, not randomness:
+It’s **mathematics, not randomness**:
 
-ratio
-=
-2
-×
-𝑀
-𝑇
-ratio=
-T
-2×M
-	​
+$$
+\text{ratio} = \frac{2 \times M}{T}
+$$
 
-
-M = number of matching characters (in order)
-
-T = total characters across both strings
+* **M** = number of matching characters (in order)
+* **T** = total characters across both strings
 
 👉 Example:
 
-DB: "Vidur Bera" (10 chars)
+* DB: `"Vidur Bera"` (10 chars)
+* Input: `"Vidurr Beraa"` (12 chars)
+* Matching subsequence = `"Vidur Bera"` (10 chars)
 
-Input: "Vidurr Beraa" (12 chars)
+$$
+M = 10, \; T = 10 + 12 = 22
+$$
 
-Matching subsequence = "Vidur Bera" (10 chars)
+$$
+\text{ratio} = \frac{2 \times 10}{22} = 0.91
+$$
 
-𝑀
-=
-10
-,
-  
-𝑇
-=
-10
-+
-12
-=
-22
-M=10,T=10+12=22
-ratio
-=
-2
-×
-10
-22
-=
-0.91
-ratio=
-22
-2×10
-	​
+Score = **0.91 → high similarity** ✅
 
-=0.91
+---
 
-Score = 0.91 → high similarity ✅
+### 2. Why AI-like?
 
-2. Why AI-like?
+Instead of `==` exact match, it measures **closeness**:
 
-Instead of == exact match, it measures closeness:
+* `"Vidur Bera"` vs `"Vidurr Beraa"` → 0.91
+* `"Vidur Bera"` vs `"Vidur Bora"` → 0.95
+* `"Vidur Bera"` vs `"Anita Rao"` → 0.0
 
-"Vidur Bera" vs "Vidurr Beraa" → 0.91
+This mimics human reasoning: we know `"Vidurr Beraa"` is probably `"Vidur Bera"`.
 
-"Vidur Bera" vs "Vidur Bora" → 0.95
+---
 
-"Vidur Bera" vs "Anita Rao" → 0.0
+### 3. AI Evidence with DOB Rule
 
-This mimics human reasoning: we know "Vidurr Beraa" is probably "Vidur Bera".
+The agent combines **fuzzy score + DOB**:
 
-3. AI Evidence with DOB Rule
-
-The agent combines fuzzy score + DOB:
-
+```python
 if r_dob == dob_val and name_score > 0.7:
     return returning
+```
 
+* If DOB matches **and** name\_score > 0.7 → Returning patient.
+* Else → New patient.
 
-If DOB matches and name_score > 0.7 → Returning patient.
+This hybrid logic = **AI heuristic (rules + similarity measure)**.
 
-Else → New patient.
+---
 
-This hybrid logic = AI heuristic (rules + similarity measure).
+### 4. Why `"name_score":1` but `"combined":0.7`?
 
-4. Why "name_score":1 but "combined":0.7?
+* Sometimes the name is an exact match → score = 1.0.
+* But the system applies a **threshold (0.7)** to confirm.
+* So `"combined":0.7` means: the system’s **confidence threshold** for recognition.
 
-Sometimes the name is an exact match → score = 1.0.
+---
 
-But the system applies a threshold (0.7) to confirm.
-
-So "combined":0.7 means: the system’s confidence threshold for recognition.
-
-📊 Example Experiments
+## 📊 Example Experiments
 
 We validated the agent with three experiments:
 
-Returning patient (exact email match) → Found instantly.
-
-Returning patient (typo in name, DOB match) → Fuzzy score > 0.7, recognized correctly.
-
-New patient → No match, created a new record, sent intake form.
+1. **Returning patient (exact email match)** → Found instantly.
+2. **Returning patient (typo in name, DOB match)** → Fuzzy score > 0.7, recognized correctly.
+3. **New patient** → No match, created a new record, sent intake form.
 
 All three confirm the system’s logic is working correctly.
