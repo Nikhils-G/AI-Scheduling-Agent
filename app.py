@@ -300,4 +300,118 @@ with c3:
         st.dataframe(orch.appointments_df.astype(str))
 
 st.markdown("---")
-st.caption("This demo app uses file-backed CSV/XLSX for storage. It's intentionally simple for easy review.")
+st.caption("This MVP uses file-backed CSV/XLSX for storage.")
+
+
+
+
+st.markdown("""
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.footer-container {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 2.5rem 1rem;
+    border-top: 3px solid #64748b;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    animation: slideFadeIn 1.3s ease-in-out both;
+    border-radius: 1.5rem 1.5rem 0 0;
+    color: #f1f5f9;
+    box-shadow: 0 -8px 24px rgba(0,0,0,0.2);
+}
+
+.footer-text {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    animation: floatUp 1.4s ease forwards;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: #38bdf8;
+    font-weight: 500;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.4s ease;
+    transform: translateY(0);
+    animation: bounceIn 1s ease both;
+}
+
+.footer-links a:hover {
+    color: #7dd3fc;
+    transform: scale(1.1) rotate(-1deg);
+    filter: drop-shadow(0 0 6px #38bdf8);
+}
+
+.footer-links i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-links a:hover i {
+    transform: rotate(10deg) scale(1.3);
+}
+
+/* Keyframe Animations */
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+</style>
+
+<div class="footer-container">
+    <div class="footer-text"> Developed by <b>Nikhil Sukthe</b></div>
+    <div class="footer-links">
+        <a href="https://nikhilsukthe.vercel.app/" target="_blank"><i class="fas fa-rocket"></i>Portfolio</a>
+        <a href="http://www.linkedin.com/in/nikhilsukthe" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        <a href="https://github.com/Nikhils-G" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+        <a href="https://www.instagram.com/nikh6l/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+    </div>
+</div>
+""", unsafe_allow_html=True)
